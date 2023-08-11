@@ -1,15 +1,27 @@
 import React from 'react'
+import { Box, Flex, Input , Text} from '@chakra-ui/react';
 
 function SearchBar() {
   return (
-    <div>
-        {/**
-         * Provide proper spacing on the top 
-         * on the left part there is a heading Search Properties to rent
-         * on the right side there is search bar with placeholder Search with Search bar
-         */}
-    </div>
-    
+    <Box p={4} mt={'4rem'}>
+      <Flex alignItems="center">
+        <Box  ml="10rem">
+          <Text fontSize={'5xl'} fontWeight={'bold'}>
+            Search properties to rent
+          </Text>
+        </Box>
+        <Box flex="1" ml={'40rem'}>
+          <Input
+            type="text"
+            placeholder="Search with search Bar"
+            borderRadius="0.25rem"
+            border="1px solid gray"
+            p="0.5rem"
+            w={'15rem'}
+          />
+        </Box>
+      </Flex>
+    </Box>
   )
 }
 
