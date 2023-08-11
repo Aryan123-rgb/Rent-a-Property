@@ -1,11 +1,21 @@
-import React, { useState } from "react";
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import React, { useContext, useState } from "react";
+import { Box, Button, Flex, Text, useToast } from "@chakra-ui/react";
 import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
+import { PropertyContext } from "../Context/PropertyProvider";
 
 function Filters() {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedPrice, setSelectedPrice] = useState("Price");
+  // const [selectedDate, setSelectedDate] = useState(null);
+  const {
+    price,
+    setPrice,
+    location,
+    setLocation,
+    propertyType,
+    setPropertyType,
+    filterPropertyArray
+  } = useContext(PropertyContext);
+  const toast = useToast();
 
   const priceOptions = [
     { value: "All", label: "All" },
@@ -17,9 +27,9 @@ function Filters() {
 
   const propertyTypeOptions = [
     { value: "All", label: "All" },
-    { value: "apartments", label: "Apartments" },
+    { value: "Apartments", label: "Apartments" },
     { value: "flats", label: "Flats" },
-    { value: "houses", label: "Houses" },
+    { value: "houses", label: "House" },
   ];
 
   const locationOptions = [
@@ -30,10 +40,31 @@ function Filters() {
     { value: "Australia", label: "Australia" },
     { value: "Germany", label: "Germany" },
   ];
-  
 
   const handlePriceChange = (selectedOption) => {
-    console.log(selectedOption);
+    setPrice(selectedOption);
+  };
+
+  const handleLocationChange = (selectedOption) => {
+    setLocation(selectedOption);
+  };
+  const handlePropertyChange = (selectedOption) => {
+    setPropertyType(selectedOption);
+  };
+
+  const handleSearch = () => {
+    if (!price && !location && !propertyType) {
+      toast({
+        title: "Select at least one filter",
+        description: "",
+        status: "error",
+        duration: 9000,
+        isClosable: true,
+        position: "top",
+      });
+      return;
+    }
+    filterPropertyArray();
   };
 
   return (
@@ -45,7 +76,11 @@ function Filters() {
               <Text fontSize="lg" fontWeight="bold" mb={2}>
                 Location
               </Text>
-              <Select placeholder="Location" options={locationOptions}/>
+              <Select
+                options={locationOptions}
+                placeholder={"Location"}
+                onChange={handleLocationChange}
+              />
             </Box>
             <Box flex="1" pr={0} pt={1} pl={3}>
               <Text fontSize="lg" fontWeight="bold" mb={2}>
@@ -59,7 +94,7 @@ function Filters() {
               </Text>
               <Select
                 options={priceOptions}
-                placeholder={selectedPrice}
+                placeholder={"Price"}
                 onChange={handlePriceChange}
               />
             </Box>
@@ -69,11 +104,12 @@ function Filters() {
               </Text>
               <Select
                 options={propertyTypeOptions}
-                placeholder="Property Type"
+                placeholder={"Property"}
+                onChange={handlePropertyChange}
               />
             </Box>
             <Box p={2} my={"auto"}>
-              <Button colorScheme="purple" size={"lg"}>
+              <Button colorScheme="purple" size={"lg"} onClick={handleSearch}>
                 Search
               </Button>
             </Box>
