@@ -15,7 +15,7 @@ import { ChevronDownIcon, StarIcon } from "@chakra-ui/icons";
 function Navbar() {
   const [isActive, setIsActive] = useState("signup");
   return (
-    <Flex p={6} align="center" justify="space-between" boxShadow={"sm"}>
+    <Flex p={6} align="center" justify="space-between" boxShadow={"sm"} bg={'white'}>
       <Box>
         <Flex align="center">
         <svg
