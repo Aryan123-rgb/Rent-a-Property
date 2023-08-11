@@ -1,21 +1,18 @@
 import React, { useState } from "react";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import DatePicker from "react-datepicker";
 import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 
 function Filters() {
-  const [moveInDate, setMoveInDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(null);
   const [selectedPrice, setSelectedPrice] = useState("Price");
 
   const priceOptions = [
     { value: "All", label: "All" },
-    { value: "500-1000", label: "$500 - $1000" },
-    { value: "1000-1500", label: "$1000 - $1500" },
-    { value: "1500-2000", label: "$1500 - $2000" },
-    { value: "2000-2500", label: "$2000 - $2500" },
-    { value: "2500-3000", label: "$2500 - $3000" },
-    { value: "3000-3500", label: "$3000 - $3500" },
+    { value: "500-1500", label: "$500 - $1500" },
+    { value: "1500-2500", label: "$1500 - $2500" },
+    { value: "2500-3500", label: "$2500 - $3500" },
+    { value: "3500-4500", label: "$3500 - $4500" },
   ];
 
   const propertyTypeOptions = [
@@ -25,18 +22,18 @@ function Filters() {
     { value: "houses", label: "Houses" },
   ];
 
+  const locationOptions = [
+    { value: "All", label: "All" },
+    { value: "USA", label: "USA" },
+    { value: "Canada", label: "Canada" },
+    { value: "UK", label: "United Kingdom" },
+    { value: "Australia", label: "Australia" },
+    { value: "Germany", label: "Germany" },
+  ];
+  
+
   const handlePriceChange = (selectedOption) => {
     console.log(selectedOption);
-  };
-
-  const datePickerInputStyles = {
-    input: (provided) => ({
-      ...provided,
-      border: "1px solid #ccc", // Add a border to the input
-      borderRadius: "4px", // Optional: Add border radius for a rounded appearance
-      padding: "8px", // Optional: Add some padding for spacing
-      fontSize: "16px", // Optional: Adjust the font size as needed
-    }),
   };
 
   return (
@@ -48,17 +45,13 @@ function Filters() {
               <Text fontSize="lg" fontWeight="bold" mb={2}>
                 Location
               </Text>
-              <Select placeholder="Location" />
+              <Select placeholder="Location" options={locationOptions}/>
             </Box>
             <Box flex="1" pr={0} pt={1} pl={3}>
               <Text fontSize="lg" fontWeight="bold" mb={2}>
                 Move-in Date
               </Text>
-              <DatePicker
-                selected={moveInDate}
-                onChange={(date) => setMoveInDate(date)}
-                placeholderText="Move-in Date"
-              />
+              {/* <FirstComponent/> */}
             </Box>
             <Box flex="1" pr={2}>
               <Text fontSize="lg" fontWeight="bold" mb={2}>

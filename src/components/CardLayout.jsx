@@ -5,9 +5,9 @@ import PropertyCard from "./PropertyCard"; // Import the PropertyCard component
 const properties = [
     {
       id: 1,
-      title: "Modern Apartment 1",
-      price: 1500,
-      location: "Downtown, City",
+      title: "Palm Harbor",
+      price: 2095,
+      location: "2699 Green Valley, Highland Lake,FL",
       type: "Apartment",
       image: "url-to-your-image1.jpg",
       specifications: ["3 bedrooms", "2 bathrooms", "1 kitchen"],
