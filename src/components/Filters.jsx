@@ -3,7 +3,7 @@ import { Box, Button, Flex, Text, useToast } from "@chakra-ui/react";
 import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 import { PropertyContext } from "../Context/PropertyProvider";
-
+import ReactDatePicker from "react-datepicker";
 function Filters() {
   // const [selectedDate, setSelectedDate] = useState(null);
   const {
@@ -13,7 +13,8 @@ function Filters() {
     setLocation,
     propertyType,
     setPropertyType,
-    filterPropertyArray
+    filterPropertyArray,
+    moveInDate, setMoveInDate
   } = useContext(PropertyContext);
   const toast = useToast();
 
@@ -53,7 +54,7 @@ function Filters() {
   };
 
   const handleSearch = () => {
-    if (!price && !location && !propertyType) {
+    if (!price && !location && !propertyType && !moveInDate) {
       toast({
         title: "Select at least one filter",
         description: "",
@@ -64,7 +65,14 @@ function Filters() {
       });
       return;
     }
+    console.log(moveInDate);
     filterPropertyArray();
+  };
+
+  const formatDate = (date) => {
+    if (!date) return ''; // Handle the case when no date is selected
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
   };
 
   return (
@@ -86,7 +94,12 @@ function Filters() {
               <Text fontSize="lg" fontWeight="bold" mb={2}>
                 Move-in Date
               </Text>
-              {/* <FirstComponent/> */}
+              <ReactDatePicker
+                placeholderText={moveInDate ? `${moveInDate}` : 'Move-in-date'}
+                borderRadius={2}
+                borderWidth={2}
+                onChange={(newValue) => setMoveInDate(formatDate(newValue))}
+              />
             </Box>
             <Box flex="1" pr={2}>
               <Text fontSize="lg" fontWeight="bold" mb={2}>

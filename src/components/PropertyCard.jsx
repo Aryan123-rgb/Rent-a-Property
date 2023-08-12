@@ -7,7 +7,7 @@ import {
   IconButton,
   Divider,
   Badge,
-  Button
+  Button,
 } from "@chakra-ui/react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
@@ -37,13 +37,7 @@ function PropertyCard({ property }) {
       boxShadow="md"
       width={"500px"}
     >
-      <Image
-        src={
-          "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg"
-        }
-        alt={title}
-        objectFit="cover"
-      />
+      <Image src={image} alt={title} objectFit="cover" />
 
       <Box p={4}>
         <Flex justifyContent="space-between" alignItems="center">
@@ -59,12 +53,12 @@ function PropertyCard({ property }) {
           </Text>
           <Button
             variant="ghost"
-            size={'lg'}
+            size={"lg"}
             color={heart ? "#7d5fff" : "transparent"} // Change color based on heart state
-            onClick={()=>setHeart(!heart)}
+            onClick={() => setHeart(!heart)}
             aria-label="Toggle Heart"
             borderWidth={3}
-            borderRadius={'full'}
+            borderRadius={"full"}
           >
             {heart ? <FaHeart /> : <FaRegHeart />}
           </Button>

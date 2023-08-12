@@ -1,93 +1,182 @@
 [
-    {
-      "id": 1,
-      "title": "Palm Harbor",
-      "price": 2095,
-      "location": "2699 Green Valley, Highland Lake, FL",
-      "type": "Apartment",
-      "image": "url-to-your-image1.jpg",
-      "specifications": ["3 bedrooms", "2 bathrooms", "1 kitchen"]
-    },
-    {
-      "id": 2,
-      "title": "Spacious House 1",
-      "price": 2500,
-      "location": "Suburb Area,USA",
-      "type": "House",
-      "image": "url-to-your-image2.jpg",
-      "specifications": ["4 bedrooms", "3 bathrooms", "2 kitchens"]
-    },
-    {
-      "id": 3,
-      "title": "Cozy Studio",
-      "price": 800,
-      "location": "City Center",
-      "type": "Studio",
-      "image": "url-to-your-image3.jpg",
-      "specifications": ["1 bedroom", "1 bathroom", "Small kitchenette"]
-    },
-    {
-      "id": 4,
-      "title": "Luxury Villa",
-      "price": 5000,
-      "location": "Seaside",
-      "type": "Villa",
-      "image": "url-to-your-image4.jpg",
-      "specifications": ["5 bedrooms", "5 bathrooms", "Swimming pool"]
-    },
-    {
-      "id": 5,
-      "title": "Rustic Cabin",
-      "price": 3200,
-      "location": "Mountain Area",
-      "type": "Cabin",
-      "image": "url-to-your-image5.jpg",
-      "specifications": ["2 bedrooms", "1 bathroom", "Fireplace"]
-    },
-    {
-      "id": 6,
-      "title": "Urban Loft",
-      "price": 1800,
-      "location": "Industrial District",
-      "type": "Loft",
-      "image": "url-to-your-image6.jpg",
-      "specifications": ["Open layout", "High ceilings", "Exposed brick"]
-    },
-    {
-      "id": 7,
-      "title": "Lakefront Residence",
-      "price": 4500,
-      "location": "Lakefront",
-      "type": "House",
-      "image": "url-to-your-image7.jpg",
-      "specifications": ["4 bedrooms", "3 bathrooms", "Private dock"]
-    },
-    {
-      "id": 8,
-      "title": "Downtown Apartment",
-      "price": 2800,
-      "location": "Downtown",
-      "type": "Apartment",
-      "image": "url-to-your-image8.jpg",
-      "specifications": ["2 bedrooms", "2 bathrooms", "Modern design"]
-    },
-    {
-      "id": 9,
-      "title": "Country Cottage",
-      "price": 1500,
-      "location": "Countryside",
-      "type": "House",
-      "image": "url-to-your-image9.jpg",
-      "specifications": ["3 bedrooms", "2 bathrooms", "Rural setting"]
-    },
-    {
-      "id": 10,
-      "title": "Beachfront Bungalow",
-      "price": 3900,
-      "location": "Beachfront",
-      "type": "House",
-      "image": "url-to-your-image10.jpg",
-      "specifications": ["2 bedrooms", "2 bathrooms", "Direct beach access"]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Palm Harbor",
+    "price": 2095,
+    "location": "2699 Green Valley, Highland Lake, FL,Canada",
+    "type": "Apartments",
+    "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg",
+    "specifications": ["3 bedrooms", "2 bathrooms", "1 kitchen"],
+    "moveInDate": "2023-09-05"
+  },
+  {
+    "id": 2,
+    "title": "Spacious House 1",
+    "price": 2500,
+    "location": "Suburb Area, USA",
+    "type": "flats",
+    "image": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?cs=srgb&dl=pexels-binyamin-mellish-1396122.jpg&fm=jpg",
+    "specifications": ["4 bedrooms", "3 bathrooms", "2 kitchens"],
+    "moveInDate": "2023-09-15"
+  },
+  {
+    "id": 3,
+    "title": "Cozy Studio",
+    "price": 800,
+    "location": "City Center,USA",
+    "type": "Apartments",
+    "image": "https://media.istockphoto.com/id/1026205392/photo/beautiful-luxury-home-exterior-at-twilight.jpg?s=612x612&w=0&k=20&c=HOCqYY0noIVxnp5uQf1MJJEVpsH_d4WtVQ6-OwVoeDo=",
+    "specifications": ["1 bedroom", "1 bathroom", "Small kitchenette"],
+    "moveInDate": "2023-08-10"
+  },
+  {
+    "id": 4,
+    "title": "Luxury Villa",
+    "price": 3500,
+    "location": "Seaside,USA,Germany",
+    "type": "flats",
+    "image": "https://cdn.pixabay.com/photo/2018/02/13/11/09/home-3150500_640.jpg",
+    "specifications": ["5 bedrooms", "5 bathrooms", "Swimming pool"],
+    "moveInDate": "2023-08-10"
+  },
+  {
+    "id": 5,
+    "title": "Rustic Cabin",
+    "price": 3200,
+    "location": "Mountain Area,Canada",
+    "type": "Apartments",
+    "image": "https://thumbs.dreamstime.com/z/new-blue-home-built-garrison-crossing-chilliwack-bc-30126974.jpg",
+    "specifications": ["2 bedrooms", "1 bathroom", "Fireplace"],
+    "moveInDate": "2023-08-25"
+  },
+  {
+    "id": 6,
+    "title": "Urban Loft",
+    "price": 1800,
+    "location": "Industrial District,Canada",
+    "type": "flats",
+    "image": "https://photos.zillowstatic.com/fp/83c3bf0a7e02be77683a1962c2d2584e-p_e.webp",
+    "specifications": ["Open layout", "High ceilings", "Exposed brick"],
+    "moveInDate": "2023-09-01"
+  },
+  {
+    "id": 7,
+    "title": "Lakefront Residence",
+    "price": 4500,
+    "location": "Lakefront,Canada",
+    "type": "Apartments",
+    "image": "https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187_640.jpg",
+    "specifications": ["4 bedrooms", "3 bathrooms", "Private dock"],
+    "moveInDate": "2023-09-10"
+  },
+  {
+    "id": 8,
+    "title": "Downtown Apartment",
+    "price": 2800,
+    "location": "Downtown,USA,Canada,Germany",
+    "type": "Apartments",
+    "image": "https://cdn.pixabay.com/photo/2017/06/16/15/58/luxury-home-2409518_640.jpg",
+    "specifications": ["2 bedrooms", "2 bathrooms", "Modern design"],
+    "moveInDate": "2023-08-18"
+  },
+  {
+    "id": 9,
+    "title": "Country Cottage",
+    "price": 1500,
+    "location": "Countryside,Canada,Germany",
+    "type": "flats",
+    "image": "https://cdn.pixabay.com/photo/2017/07/08/02/16/house-2483336_640.jpg",
+    "specifications": ["3 bedrooms", "2 bathrooms", "Rural setting"],
+    "moveInDate": "2023-09-01"
+  },
+  {
+    "id": 10,
+    "title": "Beachfront Bungalow",
+    "price": 3900,
+    "location": "Beachfront,Australia",
+    "type": "flats",
+    "image": "https://cdn.pixabay.com/photo/2015/09/27/22/36/house-961401_640.jpg",
+    "specifications": ["2 bedrooms", "2 bathrooms", "Direct beach access"],
+    "moveInDate": "2023-09-05"
+  },
+  {
+    "id": 11,
+    "title": "City View Apartment",
+    "price": 2200,
+    "location": "City Center,Australia,Germany",
+    "type": "Apartments",
+    "image": "https://cdn.pixabay.com/photo/2017/07/17/00/54/house-2511060_640.jpg",
+    "specifications": ["2 bedrooms", "2 bathrooms", "Balcony"],
+    "moveInDate": "2023-09-15"
+  },
+  {
+    "id": 12,
+    "title": "Modern Townhouse",
+    "price": 3200,
+    "location": "Suburb Area,UK,Germany",
+    "type": "houses",
+    "image": "https://cdn.pixabay.com/photo/2018/04/30/13/33/house-3362676_640.jpg",
+    "specifications": ["3 bedrooms", "2.5 bathrooms", "Garage"],
+    "moveInDate": "2023-09-20"
+  },
+  {
+    "id": 13,
+    "title": "Scenic Retreat",
+    "price": 2800,
+    "location": "Countryside,UK",
+    "type": "houses",
+    "image": "https://cdn.pixabay.com/photo/2017/06/18/21/31/house-2417321_640.jpg",
+    "specifications": ["4 bedrooms", "3 bathrooms", "Large yard"],
+    "moveInDate": "2023-09-01"
+  },
+  {
+    "id": 14,
+    "title": "Charming Studio",
+    "price": 950,
+    "location": "Quiet Neighborhood,UK",
+    "type": "houses",
+    "image": "https://cdn.pixabay.com/photo/2014/11/21/17/17/house-540796_640.jpg",
+    "specifications": ["1 bedroom", "1 bathroom", "Compact living"],
+    "moveInDate": "2023-09-05"
+  },
+  {
+    "id": 15,
+    "title": "Elegant Mansion",
+    "price": 3400,
+    "location": "Exclusive Area,UK,Australia",
+    "type": "houses",
+    "image": "https://cdn.pixabay.com/photo/2017/06/19/04/06/house-2418106_640.jpg",
+    "specifications": ["7 bedrooms", "6 bathrooms", "Grand foyer"],
+    "moveInDate": "2023-09-25"
+  },
+  {
+    "id": 16,
+    "title": "Cosy Cottage",
+    "price": 1200,
+    "location": "Wooded Area,UK,Germany",
+    "type": "houses",
+    "image": "https://photos.zillowstatic.com/fp/0c28d201cdeadcb4633d7e8894e444ae-p_e.jpg",
+    "specifications": ["2 bedrooms", "1 bathroom", "Nature views"],
+    "moveInDate": "2023-09-10"
+  },
+  {
+    "id": 17,
+    "title": "High-Rise Living",
+    "price": 3500,
+    "location": "City Skyline,Australia",
+    "type": "houses",
+    "image": "https://cdn.pixabay.com/photo/2018/05/04/07/55/snow-3373432_640.jpg",
+    "specifications": ["3 bedrooms", "2 bathrooms", "Amenities"],
+    "moveInDate": "2023-08-02"
+  },
+  {
+    "id": 18,
+    "title": "Rural Farmhouse",
+    "price": 1800,
+    "location": "Farmland,UK,Australia",
+    "type": "flats",
+    "image": "https://d1ja9tyo8nbkbc.cloudfront.net/45866257_S0020/S0020/S0020-R0100/NWM2130069/NWM136780487.jpg?version=1687366509&width=640",
+    "specifications": ["4 bedrooms", "2 bathrooms", "Barn"],
+    "moveInDate": "2023-08-15"
+  }
+]
